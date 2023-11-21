@@ -13,10 +13,14 @@ if not exist "%userprofile%\Downloads\%foldername%" (
     echo PACK NAME ALREADY EXISTS. CHOOSE ANOTHER ONE.
 )
 
-if "%version%" == "1.20" (
-    set pack_format=12
+if "%version%" == "1.20.2" (
+    set pack_format=18
+) else if "%version%" == "1.20" (
+    set pack_format=15
+) else if "%version%" == "1.19.4" (
+    set pack_format=13
 ) else if "%version%" == "1.19.3" (
-    set pack_format=11
+    set pack_format=12
 ) else if "%version%" == "1.19" (
     set pack_format=10
 ) else if "%version%" == "1.18" (
